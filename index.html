@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- file style css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fonts form google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jomhuria&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Coffe</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Restorant</a>
+            <nav>
+                <ul class="links">
+                    <li><a href="./login.html" >Sign In</a></li>
+                    <li><a href="./register.html">Sign Up</a></li>
+                </ul>
+                <ul class="user">
+                    <li><a href="#" class="user-info"></a></li>
+                    <li><a href="#" class="logout">logOut</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="section-home">
+        <div class="container">
+            
+            <div class="content">
+                <div class="content-left">
+                    <h1>Dessert</h1>
+                    <div class="content-card">
+                    </div>
+                
+                </div>
+                <div class="content-right" id="cart-product">
+                    <h2 >Your Cart(<span id="badge">0</span>)</h2>
+                    <div class="empty">
+                        <img src="./images/illustration-empty-cart.svg" alt="">
+                        <p>Your added items will appear here</p>
+                    </div>
+                    <div class="products-in-cart">
+                        <div class="products-added">
+                            
+                        </div>
+                        <div class="total">
+                            <span>Order Total</span>
+                            <h3 id="price-total">$</h3>
+                        </div>
+                        <div class="delivery">
+                            <img src="images/icon-carbon-neutral.svg" alt="">
+                            This is <span>carbon-neutral</span> delivery
+                        </div>
+                        <button id="confirm-o">Confirm Order</button>
+                        
+                        
+                    </div>
+                </div>  
+            
+            </div>
+            
+        </div>
+        <div class="overlay" >
+            <div class="order-confirmed">
+                <img src="./images/icon-order-confirmed.svg" alt="">
+                <h2>Order Confirmed</h2>
+                <p>we hope you enjoy your food!</p>
+                <div class="orders">
+                    <div class="orders-content">
+
+                    </div>
+                    <div class="order-total">
+                        <span>Order Total</span>
+                        <h3 class="total-price"></h3>
+                    </div>
+                </div>
+                <button class="confirm-order">Start New Order</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
